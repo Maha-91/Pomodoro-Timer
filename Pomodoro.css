@@ -185,7 +185,7 @@ button {
     -webkit-box-align: center;
     align-items: center;
 }
-.pomodorobutton{
+.pomodorotab{
     border: none;
     margin: 0px;
     border-radius: 4px;
@@ -396,4 +396,45 @@ margin: 0px 8px;
     font-weight: bold;
     font-size: 24px;
     margin-left: 4px;
+}
+.shortbreakcontainer
+{
+    background-color: rgb(76, 166, 169);
+    min-height: 969px;
+    width: 100%;
+    color: white;
+    transition: background-color 0.5s ease-in-out 0s;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+
+}
+.shortbreaktab {
+    border: none;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: ArialRounded;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+.pomodorobutton
+{
+    border: none;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: ArialRounded;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    font-weight: 300;
 }
