@@ -185,51 +185,8 @@ button {
     -webkit-box-align: center;
     align-items: center;
 }
-.pomodorotab{
-    border: none;
-    margin: 0px;
-    border-radius: 4px;
-    font-family: ArialRounded;
-    font-size: 16px;
-    padding: 2px 12px;
-    height: 28px;
-    cursor: pointer;
-    background: none rgba(0, 0, 0, 0.15);
-    box-shadow: none;
-    color: white;
-    opacity: 1;
-    font-weight: bold;
-}
-.shortbreakbutton{
-    border: none;
-    color: white;
-    margin: 0px;
-    border-radius: 4px;
-    font-family: ArialRounded;
-    font-size: 16px;
-    padding: 2px 12px;
-    height: 28px;
-    cursor: pointer;
-    background: none;
-    box-shadow: none;
-    font-weight: 300;
-}
-.longbreakbutton
-{
-        border: none;
-    color: white;
-    margin: 0px;
-    border-radius: 4px;
-    font-family: ArialRounded;
-    font-size: 16px;
-    padding: 2px 12px;
-    height: 28px;
-    cursor: pointer;
-    background: none;
-    box-shadow: none;
-    font-weight: 300;
-    
-}
+
+
 .timer{
     font-size: 120px;
     font-weight: bold;
@@ -423,6 +380,67 @@ margin: 0px 8px;
     opacity: 1;
     font-weight: bold;
 }
+.shortbreakbutton{
+    border: none;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: ArialRounded;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    font-weight: 300;
+}
+
+.longbreaktab {
+    border: none;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: ArialRounded;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+.longbreakbutton
+{
+        border: none;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: ArialRounded;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    font-weight: 300;
+    
+}
+.pomodorotab{
+    border: none;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: ArialRounded;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
 .pomodorobutton
 {
     border: none;
@@ -437,4 +455,13 @@ margin: 0px 8px;
     background: none;
     box-shadow: none;
     font-weight: 300;
+}
+.longbreakcontainer{
+    background-color: rgb(69, 69, 170);
+    min-height: 969px;
+    width: 100%;
+    color: white;
+    transition: background-color 0.5s ease-in-out 0s;
+    padding-bottom: 12px;
+    box-sizing: border-box;
 }
