@@ -146,10 +146,9 @@ button {
     padding: 0px 12px;
     max-width: 620px;
     margin: auto;
+     text-align: center;
 }
-.container1{
-    text-align: center;
-}
+
 .topcontainer
 {
         background-color: rgba(0, 0, 0, 0.1);
@@ -164,18 +163,16 @@ button {
     transform: translateY(-1px);
     width: 0%;
 }
-.internalmainbox
-{
-        max-width: 480px;
-    margin: auto;
-}
+
 .internalmainbox1
 {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
     padding: 20px 0px 30px;
     border-radius: 6px;
     margin-bottom: 20px;
     width: 100%;
+     max-width: 480px;
+    margin: auto;
 }
 .navbarbutton
 {
@@ -457,7 +454,7 @@ margin: 0px 8px;
     font-weight: 300;
 }
 .longbreakcontainer{
-    background-color: rgb(69, 69, 170);
+    background-color: 
     min-height: 969px;
     width: 100%;
     color: white;

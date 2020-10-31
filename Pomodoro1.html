@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="/Pomodoro1.css" />
+    <link rel="stylesheet" href="Pomodoro.css"/>
+    <link
+
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="Pomodoro1.js"></script>
+  </head>
+  <body>
+      <header>
+      <div class="pagebackground">
+      <div class="headerbanner">
+        <div class="headerfont">
+          <h1 class="pomofocuslogo">
+            <a href="/">
+              <img
+                src="icons/icon-white.png"
+                alt="pomofocus icon"
+                class="pomofocuslogosymbol"
+              />Pomofocus
+            </a>
+          </h1>
+          <span class="menu">
+            <button class="buttons">
+              <img
+                src="icons/graph-white.png"
+                alt="graph icon"
+                class="buttonicon"
+              />
+              <div class="buttontext">Report</div>
+            </button>
+            <button class="buttons">
+              <img
+                src="icons/settings-white.png"
+                alt="Settings icon"
+                class="buttonicon"/>
+              <div class="buttontext">Settings</div>
+            </button>
+            <div class="login">
+              <button class="buttons">
+                <img src="icons/login-white.png" class="buttonicon" />
+                <div class="buttontext">Login</div>
+              </button>
+              </header>
+             <div class="maincontainer">
+                  <div class="topcontainer"><div class="topcontainerline"></div></div>
+                  <div class="internalmainbox">
+                       <div class="internalmainbox1">
+                      <div class="navbarbutton">     
+       <button class="button" onclick="work()">Pomodoro</button>
+        <button class="button" onclick="short()">Short Break</button>
+        <button class="button" onclick="long()">Long Break</button>
+        </div>
+   
+    
+      <div id="timer">
+        <div id="timer-minutes">25</div>
+        <div>:</div>
+        <div id="timer-seconds">00</div>
+      </div>
+      <div>
+        <button class="btn start" id="timerBtn" value="START" onclick="timer()">
+          START
+        </button>
+      </div>
+    </main>
+    <div class="task-section">
+      <div class="current-task">
+        <!-- Current Task -->
+        Time to work !
+      </div>
+      <div class="task-template">
+        <div>Tasks</div>
+        <button class="btn" onclick="openTaskMenu()">
+          <i class="fa fa-ellipsis-v"></i>
+        </button>
+      </div>
+      <div class="task-list" id="task-list">
+        <!-- Todo Lists -->
+      </div>
+      <div class="add-task">
+        <span onclick="openNewtask()">
+          <i class="fa fa-plus-circle"></i>&nbsp; Add Task
+        </span>
+      </div>
+    </div>
+
+    <!-- New Task window  -->
+    <div class="new-task" id="newtask">
+      <input
+        type="text"
+        id="at"
+        class="addNewTask"
+        placeholder="What needs to be done ?"
+      />
+      <button type="submit" class="btn" onclick="saveNewtask()">Save</button>
+      <button type="button" class="btn cancel" onclick="closeNewtask()">
+        Cancel
+      </button>
+    </div>
+    <!-- Task Edit Window -->
+    <div class="edit-task" id="edittask">
+      <input type="text" class="edit-input" value="" />
+      <button
+        type="button"
+        class="btn editdelete"
+        id="dt"
+        onclick="deleteEdittask(this.id)"
+      >
+        Delete
+      </button>
+      <button
+        type="submit"
+        class="btn editsave"
+        id="et"
+        onclick="saveEdittask(this.id)"
+      >
+        Save
+      </button>
+      <button type="button" class="btn cancel" onclick="closeEdittask()">
+        Cancel
+      </button>
+    </div>
+
+    <!-- TaskMenu Window -->
+    <div class="task-menu" id="tm">
+      <li onclick="delCompletedTasks()">
+        <i class="fa fa-check"></i>&nbsp; Clear Finished
+      </li>
+      <li onclick="saveTemplate()">
+        <i class="fa fa-save"></i>&nbsp; Save as template
+      </li>
+      <li onclick="addTemplate()">
+        <i class="fa fa-plus"></i>&nbsp; Add as template
+      </li>
+    </div>
+    <!-- New Timer window -->
+    <div class="set-timer" id="settime">
+      <div class="labels">
+        <label>Pomodoro</label>
+        <label>Short Break</label>
+        <label>Long Break</label>
+      </div>
+      <div class="time-inputs">
+        <input
+          type="text"
+          id="pt"
+          onkeypress="return onlyNumberKey(event)"
+          class="set-time"
+          value="25"
+        />
+        <input
+          type="text"
+          id="st"
+          onkeypress="return onlyNumberKey(event)"
+          class="set-time"
+          value="5"
+        />
+        <input
+          type="text"
+          id="lt"
+          onkeypress="return onlyNumberKey(event)"
+          class="set-time"
+          value="15"
+        />
+      </div>
+      <div class="time-ctrls">
+        <button type="submit" class="btn" onclick="saveSettings()">Save</button>
+        <button type="button" class="btn cancel" onclick="closeSettings()">
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <!-- <footer class="task-desc">
+	      <div>Est:<span>4</span></div>
+	      <div>Act:<span>4</span></div>
+	      <div>Finish at <span>8:35</span></div>
+	    </footer> -->
+  </body>
+</html>
